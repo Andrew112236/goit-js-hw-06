@@ -3,10 +3,11 @@ const categoriesList = document.querySelector("#categories");
 
 // Toate elementele li.item din lista
 const categoryItems = categoriesList.querySelectorAll("li.item");
+console.log(categoryItems);
 
 // Numărul total de categorii
-const totalCategories = categoryItems.length;
-console.log("Numărul total de categorii:", totalCategories);
+const total = categoryItems.length;
+console.log("Numărul total de categorii:", total);
 
 // Titlul și numărul de elemente
 categoryItems.forEach((categoryItem) => {
@@ -15,6 +16,7 @@ categoryItems.forEach((categoryItem) => {
 
   // Toate elementele li din categoria curentă
   const categoryElements = categoryItem.querySelectorAll("li");
+  //console.log(categoryElements);
 
   // Elementele din categoria curentă
   const categoryElementCount = categoryElements.length;
